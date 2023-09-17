@@ -23,7 +23,20 @@ class VisitorInformation extends Model
     public function visitorsType($type, bool $sortBigger = false, bool $json = true)
     {
         $countriesCode = [];
-        foreach (VisitorInformation::all() as $visitor) {
+        foreach ([
+            [
+                "vis_ip" => "192.168.1.1",
+                "vis_city" => "New York",
+                "vis_country" => "United States",
+                "vis_countrycode" => "US",
+                "vis_os" => "Windows 10",
+                "vis_browser" => "Chrome",
+                "vis_latitude" => 40.7128,
+                "vis_longitude" => -74.0060,
+                "type" => 1
+            ]
+
+        ] as $visitor) {
             if (!isset($countriesCode[$visitor->$type])) {
                 $countriesCode[$visitor->$type] = 1;
             } else {

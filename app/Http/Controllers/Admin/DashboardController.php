@@ -25,33 +25,33 @@ class DashboardController extends Controller
 //        $social = ['allSocial' => 0,'allCount'=>0,'last30daysClick'=>0,'last30daysCount'=>0];
 //        $stores = ['allStore' => 0,'allCount'=>0,'last30daysClick'=>0,'last30daysCount'=>0];
 //        $clicks = ['allClick' => 0,'allCount'=>0,'last30daysClick'=>0,'last30daysCount'=>0];
-        $emails = count(Email::all());
-        $categories = count(Category::all());
-        $mails = count(Mail::all());
-        $scheduled_mails = count(DB::select('SELECT * FROM jobs'));
+        $emails = 100;
+        $categories = 100;
+        $mails = 100;
+        $scheduled_mails = 100;
 
         return view("admin.components.dashboard.index", compact('emails', 'categories', 'mails', 'scheduled_mails'));
     }
 
-    /**
-     * @return JsonResponse
-     */
-    public function mapData(): JsonResponse
-    {
-        return response()->json(VisitorInformation::visitorsMap());
-    }
+    // /**
+    //  * @return JsonResponse
+    //  */
+    // public function mapData(): JsonResponse
+    // {
+    //     return response()->json(VisitorInformation::visitorsMap());
+    // }
 
-    /**
-     * @return JsonResponse
-     */
-    public function browserUsage(): JsonResponse
-    {
-        return response()->json(VisitorInformation::visitorsBrowser());
-    }
+    // /**
+    //  * @return JsonResponse
+    //  */
+    // public function browserUsage(): JsonResponse
+    // {
+    //     return response()->json(VisitorInformation::visitorsBrowser());
+    // }
 
-    public function visitors()
-    {
-        (new VisitorInformationController)->updateLastVisit();
-    }
+    // public function visitors()
+    // {
+    //     (new VisitorInformationController)->updateLastVisit();
+    // }
 
 }
