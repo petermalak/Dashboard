@@ -175,8 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Laravel\Sanctum\SanctumServiceProvider::class,
-        Barryvdh\Snappy\ServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
+
     ],
 
     /*
