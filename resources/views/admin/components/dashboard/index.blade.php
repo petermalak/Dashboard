@@ -1,5 +1,5 @@
 @extends("admin.layouts.index")
-@section("title", title('Dashboard'))
+{{-- @section("title", title('Dashboard')) --}}
 @section("content")
     <!-- Content Wrapper. Contains page content -->
     <!-- Content Header (Page header) -->
