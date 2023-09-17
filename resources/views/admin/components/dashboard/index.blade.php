@@ -151,7 +151,7 @@
                                     <div class=""></div>
                                 </div>
                             </div>
-                            <input type="hidden" id="browserusage" data-target="{{route("browserUsage")}}">
+                            {{-- <input type="hidden" id="browserusage" data-target="{{route("browserUsage")}}"> --}}
                             <canvas id="pieChart"
                                     style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 764px;"
                                     width="764" height="250" class="chartjs-render-monitor"></canvas>
@@ -183,7 +183,7 @@
                             <!-- /.card-tools -->
                         </div>
                         <div class="card-body">
-                            <input type="hidden" id="urltovisitors" data-target="{{route("mapData")}}">
+                            {{-- <input type="hidden" id="urltovisitors" data-target="{{route("mapData")}}"> --}}
                             <div id="world-map" style="height: 250px; width: 100%;"></div>
                             <style>
                                 .jqvmap-zoomin, .jqvmap-zoomout {
