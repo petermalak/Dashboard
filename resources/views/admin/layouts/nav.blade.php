@@ -8,7 +8,7 @@
         <li class="nav-item d-none d-sm-inline-block">
             <a target="_blank" href="{{url("/")}}" class="nav-link">Home</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
+        {{-- <li class="nav-item d-none d-sm-inline-block">
             <a href="{{route("settings.index")}}" class="nav-link">Settings</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
@@ -17,7 +17,7 @@
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
             </form>
-        </li>
+        </li> --}}
     </ul>
 
     <!-- Right navbar links -->

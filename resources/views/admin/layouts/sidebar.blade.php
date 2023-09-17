@@ -31,7 +31,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{route('categories.index')}}" class="nav-link {{areActiveRoutes(['categories.*'])}}">
                         <i class="nav-icon fas fa-box"></i>
                         <p>Category</p>
@@ -55,7 +55,7 @@
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>Settings</p>
                     </a>
-                </li>
+                </li> --}}
                 {{--                <li class="nav-item">--}}
                 {{--                    <a href="{{route('videos.index')}}" class="nav-link {{areActiveRoutes(['videos.*'])}}">--}}
                 {{--                        <i class="nav-icon fas fa-video"></i>--}}
