@@ -1,4 +1,7 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
+const tailwindcss = require("tailwindcss");
+const Mix = require("laravel-mix/src/Mix");
+require("@phased/phase");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +14,18 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css')
-    .sourceMaps();
+mix
+  .options({
+    processCssUrls: false,
+    postCss: [tailwindcss("./tailwind.config.js")],
+  })
+  .webpackConfig(() => ({
+    resolve: {
+      alias: { "@": path.resolve(__dirname, "resources", "js") },
+    },
+  }))
+  .phase();
+
+if (!mix.inProduction()) {
+  mix.sourceMaps();
+}
