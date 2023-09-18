@@ -91,7 +91,7 @@
 <script src="/js/jquery.overlayScrollbars.min.js"></script>
 <script src="/js/adminlte.js"></script>
 <script src="/js/demo.js"></script>
-<script src="/js/pages/dashboard.js"></script>
+<script src="/js/dashboard.js"></script>
 <script src="//cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 
