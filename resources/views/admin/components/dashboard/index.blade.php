@@ -125,9 +125,9 @@
             </div>
             <!-- /.row -->
             <!-- Main row -->
-            <div class="row">
-                <!-- Left col -->
-                {{-- <section class="col-lg-7 connectedSortable">
+            {{-- <div class="row"> --}}
+            <!-- Left col -->
+            {{-- <section class="col-lg-7 connectedSortable">
                     <!-- Custom tabs (Charts with tabs)-->
                     <div class="card card-info">
                         <div class="card-header">
@@ -152,17 +152,17 @@
                                 </div>
                             </div>
                             {{-- <input type="hidden" id="browserusage" data-target="{{route("browserUsage")}}"> --}}
-                <canvas id="pieChart"
+            {{-- <canvas id="pieChart"
                     style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 764px;"
-                    width="764" height="250" class="chartjs-render-monitor"></canvas>
-            </div>
+                    width="764" height="250" class="chartjs-render-monitor"></canvas> --}}
+            {{-- </div> --}}
             <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-    </section> --}}
-    <!-- /.Left col -->
-    <!-- right col (We are only adding the ID to make the widgets sortable)-->
-    {{-- <section class="col-lg-5 connectedSortable">
+            {{-- </div> --}}
+            <!-- /.card -->
+            {{-- </section> --}}
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            {{-- <section class="col-lg-5 connectedSortable">
                     <!-- Map card -->
                     <div class="card bg-gradient-primary">
                         <div class="card-header border-0">
@@ -198,78 +198,80 @@
                 </section> --}}
 
 
-    <section class="col-lg-10 connectedSortable">
-        <!-- Map card -->
-        <div class="card bg-gradient-primary">
-            <div class="card-header border-0">
-                <h3 class="card-title">
-                    <i class="fas fa-map-marker-alt mr-1"></i>
-                    Map Example
-                </h3>
-                <!-- card tools -->
-                <div class="card-tools">
-                    <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
-                        <i class="far fa-calendar-alt"></i>
-                    </button>
-                    <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse" title="Collapse">
-                        <i class="fas fa-minus"></i>
-                    </button>
+            <section class="col-lg-10 connectedSortable">
+                <!-- Map card -->
+                <div class="card bg-gradient-primary">
+                    <div class="card-header border-0">
+                        <h3 class="card-title">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            Map Example
+                        </h3>
+                        <!-- card tools -->
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
+                                <i class="far fa-calendar-alt"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse"
+                                title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <!-- /.card-tools -->
+                    </div>
+                    <div class="card-body">
+                        <div id="map" style="width: 100%; height: 500px;"></div>
+                        <style>
+                            /* Example marker style */
+                            .marker-icon {
+                                background-color: #ff5733;
+                                border: 2px solid #ffffff;
+                                border-radius: 50%;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        </style>
+
+                        <script>
+                            // Initialize the map
+                            var map = L.map('map').setView([26.8206, 30.8025], 6); // Centered on Egypt
+
+                            // Add a base map layer
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                maxZoom: 19,
+                            }).addTo(map);
+
+                            // Dummy markers
+                            var markers = [{
+                                    name: 'Cairo',
+                                    latlng: [30.0444, 31.2357]
+                                },
+                                {
+                                    name: 'Luxor',
+                                    latlng: [25.6872, 32.6396]
+                                },
+                                {
+                                    name: 'Aswan',
+                                    latlng: [24.0889, 32.8998]
+                                },
+                                // Add more markers as needed
+                            ];
+
+                            // Add markers to the map
+                            markers.forEach(function(marker) {
+                                L.marker(marker.latlng).addTo(map)
+                                    .bindPopup(marker.name)
+                                    .openPopup();
+                            });
+                        </script>
+
+                    </div>
                 </div>
-                <!-- /.card-tools -->
-            </div>
-            <div class="card-body">
-                <div id="map" style="width: 100%; height: 500px;"></div>
-                <style>
-                    /* Example marker style */
-                    .marker-icon {
-                        background-color: #ff5733;
-                        border: 2px solid #ffffff;
-                        border-radius: 50%;
-                        width: 20px;
-                        height: 20px;
-                    }
-                </style>
 
-                <script>
-                    // Initialize the map
-                    var map = L.map('map').setView([26.8206, 30.8025], 6); // Centered on Egypt
-
-                    // Add a base map layer
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        maxZoom: 19,
-                    }).addTo(map);
-
-                    // Dummy markers
-                    var markers = [{
-                            name: 'Cairo',
-                            latlng: [30.0444, 31.2357]
-                        },
-                        {
-                            name: 'Luxor',
-                            latlng: [25.6872, 32.6396]
-                        },
-                        {
-                            name: 'Aswan',
-                            latlng: [24.0889, 32.8998]
-                        },
-                        // Add more markers as needed
-                    ];
-
-                    // Add markers to the map
-                    markers.forEach(function(marker) {
-                        L.marker(marker.latlng).addTo(map)
-                            .bindPopup(marker.name)
-                            .openPopup();
-                    });
-                </script>
-            </div>
+            </section>
+            <!-- right col -->
         </div>
-
-    </section>
-    <!-- right col -->
-    </div>
-    <!-- /.row (main row) -->
-    </div><!-- /.container-fluid -->
+        <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
     <!-- /.content-wrapper -->
