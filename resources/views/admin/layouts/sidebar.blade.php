@@ -37,7 +37,7 @@
                         <p>Category</p>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item">       
                     <a href="{{route('emails.index')}}" class="nav-link {{areActiveRoutes(['emails.*'])}}">
                         <i class="nav-icon fas fa-at"></i>
                         <p>Email</p>
