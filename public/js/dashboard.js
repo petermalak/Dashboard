@@ -29,7 +29,7 @@ $(function () {
     })
 
     // bootstrap WYSIHTML5 - text editor
-    $('.textarea').summernote()
+    // $('.textarea').summernote()
 
     if ($('.daterange').length)
         $('.daterange').daterangepicker({

@@ -1,7 +1,7 @@
 <!-- Footer -->
 
 <footer class="main-footer">
-    <strong>Copyright &copy; {{date("Y")}} <a href="https://www.creativetwinkles.com/">Creative Twinkles</a>.</strong>
+    <strong>Copyright &copy; {{date("Y")}} <a href="">Peter Malak</a>.</strong>
     All rights reserved.
 </footer>
 
