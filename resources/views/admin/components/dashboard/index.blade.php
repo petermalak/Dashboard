@@ -230,40 +230,6 @@
                                 height: 20px;
                             }
                         </style>
-
-                        <script>
-                            // Initialize the map
-                            var map = L.map('map').setView([26.8206, 30.8025], 6); // Centered on Egypt
-
-                            // Add a base map layer
-                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                maxZoom: 19,
-                            }).addTo(map);
-
-                            // Dummy markers
-                            var markers = [{
-                                    name: 'Cairo',
-                                    latlng: [30.0444, 31.2357]
-                                },
-                                {
-                                    name: 'Luxor',
-                                    latlng: [25.6872, 32.6396]
-                                },
-                                {
-                                    name: 'Aswan',
-                                    latlng: [24.0889, 32.8998]
-                                },
-                                // Add more markers as needed
-                            ];
-
-                            // Add markers to the map
-                            markers.forEach(function(marker) {
-                                L.marker(marker.latlng).addTo(map)
-                                    .bindPopup(marker.name)
-                                    .openPopup();
-                            });
-                        </script>
-
                     </div>
                 </div>
 

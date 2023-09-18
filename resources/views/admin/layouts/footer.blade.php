@@ -95,9 +95,6 @@
 <script src="//cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-
-
 @stack("scripts")
 </body>
 </html>
