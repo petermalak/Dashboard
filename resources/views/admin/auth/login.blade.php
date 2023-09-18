@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield("title", title())</title>
-    <link rel="icon" href="/styles/admin/dist/img/favicon.png"/>
+    <link rel="icon" href="/images/favicon.png"/>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -18,7 +18,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <img src="/styles/admin/dist/img/logo2.png" alt="Mail App">
+        <img src="/images/logo2.png" alt="Mail App">
     </div>
     <!-- /.login-logo -->
     <div class="card">

@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route("dashboard")}}" class="brand-link" style="height:60px ;padding-top: 15px;">
-        <img src="/styles/admin/dist/img/logo2.png" alt="Mail" class="brand-image" style="width: 200px; float: none;">
+        <img src="/images/logo2.png" alt="Mail" class="brand-image" style="width: 200px; float: none;">
     </a>
 
     <!-- Sidebar -->

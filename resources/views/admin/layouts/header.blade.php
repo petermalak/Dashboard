@@ -6,7 +6,7 @@
     {{-- <title>@yield("title", title())</title> --}}
 
     <meta name="csrf-token" content="{{csrf_token()}}">
-    <link rel="icon" href="/styles/admin/dist/img/favicon.png"/>
+    <link rel="icon" href="/images/favicon.png"/>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
