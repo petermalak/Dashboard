@@ -48,7 +48,7 @@ $(function() {
         RU: 3000
     }
     $('#world-map').vectorMap({
-        map: 'usa_en',
+        map: 'world',
         backgroundColor: 'transparent',
         regionStyle: {
             initial: {
