@@ -1,5 +1,5 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-light-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route("dashboard")}}" class="brand-link" style="height:60px ;padding-top: 15px;">
         <img src="/images/logo2.png" alt="Mail" class="brand-image" style="width: 200px; float: none;">
