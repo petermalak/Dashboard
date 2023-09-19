@@ -198,9 +198,9 @@
                 </section> --}}
 
 
-            <section class="col-lg-10 connectedSortable">
+            <section class="col-lg-12 connectedSortable">
                 <!-- Map card -->
-                <div class="card bg-gradient-primary">
+                <div class="card bg-gradient-secondary">
                     <div class="card-header border-0">
                         <h3 class="card-title">
                             <i class="fas fa-map-marker-alt mr-1"></i>
@@ -208,10 +208,10 @@
                         </h3>
                         <!-- card tools -->
                         <div class="card-tools">
-                            <button type="button" class="btn btn-primary btn-sm daterange" title="Date range">
+                            <button type="button" class="btn btn-secondary btn-sm daterange" title="Date range">
                                 <i class="far fa-calendar-alt"></i>
                             </button>
-                            <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse"
+                            <button type="button" class="btn btn-secondary btn-sm" data-card-widget="collapse"
                                 title="Collapse">
                                 <i class="fas fa-minus"></i>
                             </button>
