@@ -75,88 +75,46 @@
                         <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <section class="col-lg-12 connectedSortable">
+                    <!-- Map card -->
+                    <div class="card">
+                        <div class="card-header border-0">
+                            <h3 class="card-title">
+                                <i class="fas fa-map-marker-alt mr-1"></i>
+                                Map Example
+                            </h3>
+                            <!-- card tools -->
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-secondary btn-sm daterange" title="Date range">
+                                    <i class="far fa-calendar-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-sm" data-card-widget="collapse"
+                                    title="Collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                            <!-- /.card-tools -->
+                        </div>
+                        <div class="card-body">
+                            <div id="map" style="width: 100%; height: 500px;"></div>
+                            <style>
+                                /* Example marker style */
+                                .marker-icon {
+                                    background-color: #ff5733;
+                                    border: 2px solid #ffffff;
+                                    border-radius: 50%;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            </style>
+                        </div>
+                    </div>
 
+                </section>
             </div>
 
-
-            {{-- <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div class="info-box bg-info">
-                        <span class="info-box-icon"><i class="nav-icon fas fa-at"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Total Emails</span>
-                            <span class="info-box-number">{{ number_format($emails) }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div class="info-box bg-success">
-                        <span class="info-box-icon"><i class="nav-icon fas fa-box"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Total Categories</span>
-                            <span class="info-box-number">{{ number_format($categories) }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div class="info-box bg-warning">
-                        <span class="info-box-icon"><i class="nav-icon fas fa-mail-bulk"></i></span>
-                        <div class="info-box-content">
-                            <span class="info-box-text">Total Mails</span>
-                            <span class="info-box-number">{{ number_format($mails) }}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div class="info-box bg-danger">
-                        <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Total Scheduled Mails</span>
-                            <span class="info-box-number">{{ number_format($scheduled_mails) }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
-            <section class="col-lg-12 connectedSortable">
-                <!-- Map card -->
-                <div class="card">
-                    <div class="card-header border-0">
-                        <h3 class="card-title">
-                            <i class="fas fa-map-marker-alt mr-1"></i>
-                            Map Example
-                        </h3>
-                        <!-- card tools -->
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-secondary btn-sm daterange" title="Date range">
-                                <i class="far fa-calendar-alt"></i>
-                            </button>
-                            <button type="button" class="btn btn-secondary btn-sm" data-card-widget="collapse"
-                                title="Collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                        </div>
-                        <!-- /.card-tools -->
-                    </div>
-                    <div class="card-body">
-                        <div id="map" style="width: 100%; height: 500px;"></div>
-                        <style>
-                            /* Example marker style */
-                            .marker-icon {
-                                background-color: #ff5733;
-                                border: 2px solid #ffffff;
-                                border-radius: 50%;
-                                width: 20px;
-                                height: 20px;
-                            }
-                        </style>
-                    </div>
-                </div>
-
-            </section>
             <!-- right col -->
         </div>
         <!-- /.row (main row) -->
