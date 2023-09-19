@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{route("dashboard")}}" class="brand-link" style="height:60px ;padding-top: 15px;">
-        <img src="/images/logo2.png" alt="Mail" class="brand-image" style="width: 200px; float: none;">
+        <img src="/images/Main-khales-logo-new-1.png" alt="Khales" class="brand-image" style="width: 200px; float: none;">
     </a>
 
     <!-- Sidebar -->
